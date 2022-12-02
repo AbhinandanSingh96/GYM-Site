@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Nerko One', cursive;
+        color: white;
+        /* margin: 0px; */
+        /* padding: 0px; */
+        background: url(2.jpg);
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        height: 1430px;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 22px;
+        top: 20px;
+    }
+
+    .mid {
+        /* border: 2px solid rgb(76, 0, 255); */
+        /* kisi bhi chij ko center me krna ho to uske disply ko inline block aur margin x ke kuch aur y me auto dete hai */
+        display: block;
+        width: 60%;
+        margin: 20px 424px;
+    }
+
+    .right {
+        /* border: 2px solid rgb(12, 253, 64); */
+        display: inline-block;
+        position: absolute;
+        right: 22px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+
+    }
+
+    .navbar li a {
+        color: rgb(188, 80, 80);
+        text-decoration: none;
+        padding: 29px 13px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: blueviolet;
+    }
+
+    .left img {
+        width: 128px;
+        border-radius: 29px;
+        position: sticky;
+    top: 2px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 19px;
+        font-size: 26px;
+        
+    }
+
+    .i {
+        margin: 0px 9px;
+        padding: 4px 14px;
+        border: 2px solid blue;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Rubik Distressed', cursive;
+    }
+
+    .i:hover {
+        background-color: burlywood;
+    }
+
+    .container {
+        border: 2px solid green;
+        margin: 140px 228px;
+        padding: 36px 46px;
+        width: 32%;
+        border-radius: 21px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 275px;
+        padding: 6px;
+        border: 2px solid #00efff;
+        margin: 3px auto;
+        border-radius: 14px;
+        font-family: 'Nerko One', cursive;
+        font-size: 21px;
+    }
+
+    h1 {
+        color: #c87f33;
+        text-align: center;
+    }
+
+    .container button {
+        /*yha maine text ko center me krne ke liye text aline ka use kiya but kuch huaa nhi button hai syad es vjh se to iska display block krenge & width denge & margin me auto denge*/
+        /*text-align:center;*/
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+
+    h1:hover {
+        cursor: pointer;
+        color: #2ea7e9;
+    }
+
+    .form-group input:hover {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <header class="a">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="43350.jpg" alt="" id="b">
+            <div>Fitness Club</div>
+        </div>
+        <!-- mid bod for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="About.html"target="_blank">About Us</a></li>
+                <li><a href="Fitness.html"target="_blank">Fitness Calculator</a></li>
+                <li><a href="Contact.html"target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <a href="Call.html"target="_blank"><button class="i">Call Us Now</button></a>
+            <a href="Email.html"target="_blank"> <button class="i">Email Us</button></a>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Our Gym For Best Health</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Localicity">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Phone No">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email">
+            </div>
+            <button class="i">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
